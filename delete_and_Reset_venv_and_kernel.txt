@@ -1,0 +1,4 @@
+cd "/Users/hitesh.modi/Desktop/Kinda Personal/LLM Marketing Bot/"
+rm -rf marketingvm
+
+jupyter kernelspec uninstall marketingvm

@@ -1,0 +1,11 @@
+# Step into your project directory
+cd "/Users/hitesh.modi/Desktop/Kinda Personal/LLM Marketing Bot/"
+
+# Activate the virtual environment
+source marketingvm/bin/activate
+
+# Start Ollama (if not already running in the background)
+ollama serve &
+
+# Optional: Run Jupyter Notebook
+jupyter notebook

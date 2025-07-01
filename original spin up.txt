@@ -1,0 +1,33 @@
+cd "/Users/hitesh.modi/Desktop/Kinda Personal/LLM Marketing Bot/"
+
+
+# 1. Create and activate the virtual environment
+python3 -m venv marketingvm
+source marketingvm/bin/activate
+
+# 2. Upgrade pip
+pip install --upgrade pip
+
+# 3. Install your project dependencies
+brew install libmagic
+pip install -r requirements.txt
+
+# 4. Install Jupyter inside the venv
+pip install notebook
+
+# 5. (Outside Python) Install Ollama via Homebrew
+brew install ollama
+
+# 6. Start Ollama server (in background)
+ollama serve
+
+# 7. Pull your LLM
+ollama pull mistral
+
+# 8. Test the model works
+ollama run mistral
+ollama stop mistral
+
+#9 install ipykernel and make a kernel in jupyter notebook as per this vm
+pip install ipykernel
+python -m ipykernel install --user --name=marketingvm --display-name "Python (marketingvm)"
